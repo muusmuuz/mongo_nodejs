@@ -6,7 +6,7 @@ services:
     ports:
       - "9292:9292"
     external_links:
-      - moitrack-mongodb
+      - db
     networks: 
       - custom
     tty: true
