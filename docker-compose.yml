@@ -1,0 +1,18 @@
+version: '3'
+services:
+  nodejs:
+    image: node
+    container_name: nodejs_link
+    ports:
+      - "9292:9292"
+    external_links:
+      - moitrack-mongodb
+    networks: 
+      - custom
+    tty: true
+
+networks:
+   custom:
+     external: true
+
+
